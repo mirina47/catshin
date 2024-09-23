@@ -1,0 +1,356 @@
+.laboratory_header {
+    background-color: #FFFFFF;
+    flex-direction: row;
+    background-image: url(images/laboratory/background_wish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+    height: 55vw;
+}
+
+.laboratory_header .laboratory_ul {
+    flex-direction: column;
+    width: 45%;
+}
+
+.laboratory_header .laboratory_ul .laboratory_menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 10%;
+    padding: 0;
+}
+
+.laboratory_header .laboratory_ul .laboratory_menu ul li {
+    margin: 2%;  
+    font-size: 3vw;
+    font-family: "Century Gothic";
+}
+
+.laboratory_header .laboratory_ul .laboratory_menu img {
+    width: 15vw;
+    height: 15vw;
+}
+
+
+
+.laboratory_header .laboratory_ul .quantity ul {
+    margin: 3% 10%;
+    padding: 0;
+    padding-left: 10%;
+}
+
+.laboratory_header .laboratory_ul .quantity ul li {
+    margin: 2%;  
+    font-size: 2vw;
+    font-family: "Century Gothic";
+}
+
+
+
+.laboratory_header .personal_cat {
+    width: 35%;
+}
+
+.laboratory_header .personal_cat img {
+    width: 40vw;
+    height: 40vw;
+    margin-top: 35%;
+}
+
+
+
+.laboratory_header .wish_star {
+    width: 20%;
+    justify-content:flex-end;
+}
+
+.laboratory_header .wish_star input {
+    height: 18vw;
+    margin-right: 13%;
+}
+
+
+
+
+
+.laboratory_h {
+    background-color: #FFE24D;
+    justify-content: center;
+}
+
+.laboratory_h h2 {
+        margin: 2% 0;
+}
+
+
+
+
+
+.laboratory_creation {
+    background-image: url(images/laboratory/call.png);
+    height: 96vw;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.laboratory_creation .laboratory_cat1, .laboratory_creation .laboratory_cat2 {
+    background-color: #FFFFFF;
+    width: 30vw;
+    flex-direction: column;
+    border-style: dashed;
+    border-color: black;
+    border-width: 0.5vw;
+    position: relative;
+    margin: 5% auto;
+}
+
+.laboratory_creation .laboratory_cats img {
+    background-color: #FFFFFF;
+    height: 30vw;
+    width: 30vw;
+}
+
+.laboratory_creation .laboratory_cat1 h2 {
+    margin: 5% 5%;
+    text-align: left;
+}
+
+.laboratory_creation .laboratory_cat2 h2 {
+    margin: 5% 5%;
+    text-align: right;
+}
+
+.laboratory_creation .laboratory_button {
+    justify-content: center;
+    position: absolute;
+    margin-top: 39%;
+}
+
+.laboratory_creation button {
+   background-color: #FF4A26;
+    border: none;
+    text-align: center; 
+    cursor: pointer;
+    height: 5vw;
+    width: 25vw;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 2vw;
+    font-family: "Century Gothic";
+}
+
+
+
+
+
+
+
+.laboratory_catalog {
+    background-color: #FDFCD6;
+    flex-direction: column;
+    height: 60vw;
+}
+
+.laboratory_catalog h2 {
+
+    margin: 2% 0 0 2.5%;
+}
+
+.laboratory_catalog .cats_accessories {
+    background-color: #E3DBF9;
+    width: 95%;
+    margin: 2% auto;
+}
+
+.laboratory_catalog .cats_accessories .tab img {
+    width: 10vw;
+}
+
+.laboratory_catalog .cats_accessories .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #BCAEE2;
+    flex-direction: column;
+    width: 25%;
+}
+
+.laboratory_catalog .cats_accessories .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5%;
+    transition: 1s;
+}
+
+.laboratory_catalog .cats_accessories .tab button:hover {
+    background-color: #ddd;
+}
+
+.laboratory_catalog .cats_accessories .tab button.active {
+    background-color: #E3DBF9;
+}
+
+
+
+.laboratory_catalog .cats_accessories .tabcontent {
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 35vw;
+}
+
+.laboratory_catalog .cats_accessories .tabcontent img {
+    width: 30vw;
+    height: 30vw;
+}
+
+.laboratory_catalog .cats_accessories .tabcontent button {
+    margin: 5%;
+    justify-content: center;
+    background-color: #FF4A26;
+    border: none;
+    text-align: center; 
+    cursor: pointer;
+    height: 5vw;
+    width: 15vw;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 2vw;
+    font-family: "Century Gothic";
+}
+
+.laboratory_catalog .cats_accessories #my_cats {
+    
+}
+
+.laboratory_catalog .cats_accessories #my_accessories {
+    display: none;
+}
+.laboratory_catalog .cats_accessories #my_special_cats {
+    display: none;
+}
+
+
+.laboratory_catalog .Puhlya {
+    position: absolute;
+    margin: 31% 0 0 3%;
+}
+
+.laboratory_catalog .Puhlya img {
+    height: 30vw;
+    width: 30vw;
+}
+
+
+
+.popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+.popup {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.66);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.popup_body {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /*padding: 30px 10px;*/
+    
+}
+.popup_content {
+    background-color: white;
+    color: black;
+    height: 70%;
+    width: 70%;
+    padding: 30px;
+    border-radius: 6%;
+    display: block;
+}
+.popup_close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+}
+#close {
+    font-size: 30px;
+    color: white;
+    font-family: "Century Gothic"; 
+}
+.title {
+    display: block;
+    text-align: center;
+    
+}
+.popup_text {
+    height: 100%;
+    display: block;
+}
+.cats_card {
+    overflow-x: scroll;
+    display: block;
+    height: 100%;
+    /*justify-content: center;
+    align-items: center;*/
+}
+.cat_msg {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    justify-content: center;
+}
+
+
+
+.card {
+    height: 80%;
+    width:auto;
+
+    /*border: 2px solid black;*/
+    background-color: black;
+    margin-top: 5%;
+
+
+}
+
+.card:nth-child(even) {
+    float: right;
+    margin-right: 10%;
+}
+.card:nth-child(odd) {
+    float:left;
+    margin-left: 10%;
+}
+ 
+
+.card:last-child {
+    margin-right: 10%;
+}
+.card a:hover {
+    opacity: 0.5;
+}
+.card:active {
+    border: 4px solid rgb(255, 191, 62);
+}
+
+.help {
+    display: none;
+}
